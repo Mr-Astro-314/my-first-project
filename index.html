@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yume land</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="small.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" href="ticket.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Yume</div>
+        <ul>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">help</a></li>
+        </ul>
+    </header>
+    <div class="home-page">
+        <h1 class="welcome-h">welcome to Yumeland</h1>
+        <p class="address">Musical Fountain and Boating Division, Aamrapali (Ind.) Ltd., Naginavadi, Kankaria, Ahmedabad – 380 008 </p>
+        <button class="ticket-book">ticket book</button>
+    </div>
+    <div class="mf" id="bookingformbox">
+        <div class="mcf">
+            <span class="cbf">&times;</span>
+            <div class="formfill">
+                <form id="booking-form">
+                    <label for="name">enter your name</label>
+                    <br>
+                    <input type="text" id="name" placeholder="enter your name" required> 
+                    <br>
+                    <label for="Email">enter your Email</label>
+                    <br>
+                    <input type="email" id="mail" placeholder="enter your email" required> 
+                    <br>
+                    <label for="number">enter your number</label>
+                    <br>
+                    <input type="text" id="number" placeholder="enter your number" pattern="^\+91[0-9]{10}$" required> 
+                    <br>
+                    <label for="age">enter your age</label>
+                    <br>
+                    <input type="number" id="age" placeholder="enter your age" min="10" max="60" required> 
+                    <br>
+                    <label for="address">enter your address</label>
+                    <br>
+                    <input type="text" id="address" placeholder="enter your address" required> 
+                    <br>
+                    <label for="date">enter visiting date</label>
+                    <br>
+                    <input type="date" id="date" placeholder="enter visiting date" required> 
+                    <br>
+                    <button type="submit" id="submit-button">ticket book</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <div class="model" id="conformationbox">
+        <div class="display">
+            <p>ticket price is ₹1000.</p>
+            <P>DO YOU WANT CONFORM THIS TICKET.</P>
+            <div class="conform-button">
+                <button id="yes" class="conform-btn">yes book</button>
+                <button id="cancel" class="conform-btn">No cancel</button>
+            </div>
+        </div>
+    </div>
+   
+    <div id="result-box">
+        
+        <div id="resultfun">
+            <span class="cbf" id="boxlet">&times;</span>
+            <div class="result" id="results"></div>
+            <button id="bookNow" class="bookclass">Book Now</button>
+            <div id="successfully">
+                <p>successfully booking</p>
+                <button id="Print" class="bookclass">Print Now</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <section class="content">
+        <div class="center">
+            <h1 class="view center">view now</h1>
+        </div>
+        <div class="content-box">
+            <!-- robotic gallery -->
+            <div class="item-box" onclick="showDetails('rg-details')">
+                <img class="content-img" src="robo.jpg" alt="robot img">
+                <h2 class="name">Robotics Gallery</h2>
+                <p>The Robotics Gallery offers an immersive experience into the world of cutting-edge robots.
+                    <br> From humanoid machines to interactive exhibits, it showcases the future of robotics and artificial intelligence.</p>
+                    <hr>
+                <div class="touch">
+                    <a href="#" class="see-all ">See all</a>
+                    <button class="ticket-book tb-box">ticket book</button>
+                </div>
+            </div>
+            <div id="rg-details" class="all-details-box">
+                <img src="robo.jpg" alt="img" class="all-img-details">
+                <h2>robotics gallery</h2>
+                
+                <h4>name :</h4><p>robotic gallery.</p>
+                
+                <h4>area : </h4> <p>the gallery spans over 11,000 square meters, making it one of the largest attractions in the robotics gallery.</p>
+                <br>
+                
+                <h4>Interactive Exhabits : </h4><p>the gallery hosted over 200 robots forms 79 different types, allowing visitors to explore 
+                    various applications of robotic in fields like medicine agriculture, and defense.</p>
+                
+                
+                <h4>Features : </h4>
+                    <br>
+                    
+                    <h4>Reception Robots: </h4><p>Visitors are greeted by humanoid robots that
+                     can interact socially, welcoming them and providing
+                      introductions to the gallery.</p>
+                      <br>
+                      <h4>VR Zone:</h4><p>A dedicated area for virtual
+                       and augmented reality experiences, allowing guests to 
+                       engage with robotics in a digital environment.</p> 
+                       <br>
+                       <h4>Robo Café: </h4><p>Visitors can enjoy food prepared by robotic chefs and
+                        served by robot waiters, combining entertainment with dining.</p>
+                        <br>
+               
+                <h4>Learning Experience:</h4>
+                   <p> Each section of the gallery is designed to educate visitors
+                     about the utility and innovations in robotics, enhancing public
+                      understanding of this field. The layout includes a central atrium and various
+                       thematic displays.</p>
+                       <br>
+               <h4>Family-Friendly: </h4>
+
+                     <p>The Robotics Gallery is designed for visitors of all ages, making it an ideal educational
+                     outing for families. It aims to foster a scientific temper 
+                      encourage learning through entertainment.</p>
+                      <br>
+                <h4>Themes and Zones:</h4>
+
+                <p>The gallery is divided into different zones that highlight specific 
+                aspects of robotics, such as space robotics, underwater robots, 
+                and biomimicry robots. Each zone focuses on how robots are applied in these fields.
+                </p>
+                <br>
+                <h4>Design and Integration:</h4>
+
+                    <p>The Robotics Gallery is designed to blend with the natural and architectural elements
+                     of the Science City. The building's architecture draws inspiration from the mechanics
+                      of robotics, creating an environment that feels futuristic and technologically advanced.
+                </p>
+            </div>
+
+
+            
+            <!-- techniqal area -->
+            <div class="item-box" onclick="showDetails('technical-area-details')">
+                <img class="content-img" src="tecniqal-area.jpg" alt="img">
+                <h2 class="name">Technical Area</h2>
+                <p>the Technical area of our site is dedicated to showcasing the latest advancements in technology, focusing on innovation in 
+                   <br> automation rtificial intelligence,and engineering. this section provides details insights into how morden  technology 
+                    shapes our world. 
+                </p>
+                <hr>
+                <div class="touch">
+                    <a href="#" class="see-all ">See all</a>
+                    <button class="ticket-book tb-box">ticket book</button>
+                </div>
+            </div>
+
+
+            <div id="technical-area-details" class="all-details-box">
+                <img src="tecniqal-area.jpg" alt="img" class="all-img-details">
+                <h2>technical area details</h2>
+                <h4>name :</h4><p>tec
+                hnical area.</p>
+                <br>
+                <h4>area :</h4><p>The Technical Area is part of the largest area, which spans a total area of 107 hectares 
+                    (approximately 264 acres). However, the specific size of the Technical Area itself within this 
+                    larger complex isn't specified in the available resources.
+                </p>
+                <br>
+                <h4>
+                    Automation and Engineering: </h4>
+
+                   <p> The Technical Area highlights various applications of automation technologies in industries. 
+                    Visitors can learn about how automated systems improve efficiency in sectors like manufacturing, 
+                    healthcare, and logistics.</p>
+                    <br>
+               
+                <h4>
+                    Interactive Exhibits:
+                    </h4>
+                    <p>This section includes hands-on displays where visitors can engage with different
+                     technologies, including simulations of automated processes. The exhibits aim to provide 
+                     a practical understanding of engineering principles and their real-world applications.</p>
+                     <br>
+                   <h4> Energy Education Park:</h4>
+
+                    <p>Part of the Technical Area, this park focuses on sustainable energy solutions. 
+                    It features interactive displays on various energy sources, including solar, wind,
+                     and geothermal, demonstrating their significance in combating climate change and
+                      promoting sustainability.    
+                </p>
+                <br>
+                
+                  <h4> Demonstrations and Workshops:</h4> 
+
+                   <p> Regular workshops and live demonstrations are conducted in this area to educate 
+                    visitors on the latest technologies and innovations. These sessions are designed to
+                     encourage participation and provide deeper insights into the applications of technology.
+                </p>
+                <br>
+               
+                    <h4>Learning Through Engagement:</h4>
+
+                     <p>The Technical Area is designed to be both educational and entertaining, 
+                    catering to visitors of all ages. The goal is to foster a better understanding
+                     of science and technology and inspire future innovations.
+                </p>
+                <br>
+               
+                    <h4>Additional Attractions:</h4>
+
+                     <p>Visitors can also explore simulations that demonstrate the impact of engineering
+                     and technology in solving real-life problems, making it a hands-on learning experience.
+                </p>
+            </div>
+
+            
+            <!-- aquarium -->
+            <div class="item-box" onclick="showDetails('aquarium-details')">
+                <img class="content-img" src="aquarium.jpg" alt="img">
+                <h2 class="name">Aquarium</h2>
+                <p>
+                    the aquarium section offers visitors an opportunity to explore the captivating world of marine life
+                    <br> it features a variety of fish, corals, and other aquatic creatures showcasing the rich diversity
+                    of underwater ecosystems.
+
+                </p>
+                <hr>
+                <div class="touch">
+                    <a href="#" class="see-all ">See all</a>
+                    <button class="ticket-book tb-box">ticket book</button>
+                </div>
+            </div>
+
+            <div id="aquarium-details" class="all-details-box">
+                <img src="aquarium.jpg" alt="img" class="all-img-details">
+                <h2>Aquarium</h2>
+                <h4>name :</h4><p>Aquarium.</p>
+                <br>
+                    <h4>area :</h4><p>the aquarium is the largest public aquarium in india spread over 11,500 square meters..</p> 
+                    <br>
+                <h4>
+                    Diverse Marine Species:</h4>
+
+                    <p>The gallery houses 11,600 aquatic animals from around 188 different species, 
+                    including reef sharks, zebra sharks, alligator gar, black pacu fish, and more.
+                     It offers an underwater walkway tunnel where visitors can observe marine life in
+                      their natural environment.</p>
+                <br>
+                <h4>
+                    Shark Tunnel:</h4>
+
+                    <p>A key highlight is the 28-meter shark tunnel where visitors can walk through
+                     an acrylic tunnel surrounded by a variety of sharks and other marine creatures.
+                      This feature provides an exhilarating view of sea life.</p>
+                <br>
+                <img src="aqu2.jpg" alt="img" class="all-img-details">
+                <br>
+                   <h4> 5D Theatre:</h4>
+                   <p> In addition to live exhibits, the Aquatic Gallery offers a 5D theatre experience,
+                     allowing visitors to dive deeper into the underwater world through immersive shows.
+                </p>
+               <br>
+                   <h4 > Interactive Touchpad Displays:</h4>
+
+                    <p> Visitors can engage with touchpad displays that provide detailed information about the 
+                    different species present in the gallery. QR code-based learning is also integrated 
+                    into the exhibits, making it both educational and entertaining.
+                </p>
+                <br>
+                  <h4>  Marine Tanks:</h4>
+                    <p>The gallery features 68 tanks, each dedicated to different marine habitats 
+                    and species, ranging from tropical fish to deep-sea creatures.
+                </p>
+                <br>
+                <img src="aqu3.jpg" alt="img" class="all-img-details">
+               <br>
+                 <h4>Bioluminescent Tanks:</h4>
+
+                   <p>  Some tanks are designed to showcase bioluminescent species, which glow in the dark.
+                     This provides a mesmerizing display of marine life that naturally produces light, 
+                     such as jellyfish and certain types of fish.
+                    </p>
+            </div>
+
+            <!-- nature park -->
+            <div class="item-box" onclick="showDetails('nature-park-details')">
+                <img class="content-img" src="garden.jpg" alt="img">
+                <h2 class="name">Nature park</h2>
+                <p>
+                    the nature park is vabrant and eco-friendly space that connect visitors with nature. features a divers
+                    array of trees.<br> plant, and wildlife, promoting environental awareness and appreciation. the park  includes 
+                    walking trails, garden, and open spaces for visitors to enjoy the beauty of nature. educational exhabits are 
+                    also available,highlighting the importance of biodiversity and conservation.
+                </p>
+                <hr>
+                <div class="touch">
+                    <a href="#" class="see-all ">See all</a>
+                    <button class="ticket-book tb-box">ticket book</button>
+                </div>
+            </div>
+            <!-- rides -->
+            <div class="item-box" onclick="showDetails('rides-details')">
+                <img class="content-img" src="rides.jpg" alt="img">
+                <h2 class="name">rides</h2>
+                <p>
+                    The Sci City offers various simulator rides that
+                     provide virtual experiences of different scientific and space adventures. These simulators give visitors the
+                      feeling of being in a space shuttle or deep under the ocean, using technology to create a
+                     thrilling experience.
+
+                </p>
+                <hr>
+                <div class="touch">
+                    <a href="#" class="see-all ">See all</a>
+                    <button class="ticket-book tb-box">ticket book</button>
+                </div>
+            </div>
+            <!-- water park -->
+            <div class="item-box" onclick="showDetails('water-park-details')">
+                <img class="content-img" src="water-park.jpg" alt="img">
+                <h2 class="name">Water park</h2>
+                <p>
+                    A water park typically consists of water slides, wave pools, and lazy rivers. 
+                     creating thrilling rides.
+                     Wave pools simulate ocean waves using mechanical systems, while lazy rivers have gentle 
+                     currents for a relaxing experience.
+                     The park also uses filtration and treatment systems to ensure clean, safe water for visitors.
+
+                </p>
+                <hr>
+                <div class="touch">
+                    <a href="#" class="see-all ">See all</a>
+                    <button class="ticket-book tb-box">ticket book</button>
+                </div>
+            </div>
+            <!-- space hole -->
+            <div class="item-box" onclick="showDetails('space-hole-details')">
+                <img class="content-img" src="space-hole.jpg" alt="img">
+                <h2 class="name">Hole of space</h2>
+                <p>
+                    The Space Gallery at Science City offers a fun and educational experience where
+                     visitors can practically understand science. The mysteries of black holes,
+                      planets, and stars are presented through 3D shows, simulations, and interactive
+                       modules. this gallery is a
+                        perfect place to explore!
+                </p>
+                <hr>
+                <div class="touch">
+                    <a href="#" class="see-all ">See all</a>
+                    <button class="ticket-book tb-box">ticket book</button>
+                </div>
+            </div>
+            <!-- 3d hole  -->
+            <div class="item-box" onclick="showDetails('hd-hole-details')">
+                <img class="content-img" src="3d-hole.jpg" alt="img">
+                <h2 class="name">IMAX 3D</h2>
+                <p>
+                    The 3D IMAX Theatre the wonders of science and nature through an immersive film experience. Whether 
+                     you are watching a thrilling documentary about space exploration or a captivating nature film, 
+                     the combination of IMAX technology and engaging content creates a unique and memorable outing.
+                </p>
+                <hr>
+                    
+                <div class="touch">
+                    <a href="#" class="see-all ">See all</a>
+                    <button class="ticket-book tb-box">ticket book</button>
+                </div>
+            </div>
+            <!-- earth  -->
+            <div class="item-box" onclick="showDetails('earth-details')">
+                <img class="content-img" src="planet earth.jpg" alt="img">
+                <h2 class="name">Planet earth</h2>
+                <p>
+                    The Planet Earth Pavilion at Science City is an engaging and educational space
+                     that brings awareness to the natural processes of the Earth and the environmental 
+                     challenges we face. Through interactive exhibits, simulations, and informative displays, 
+                     it offers a comprehensive understanding of Earth’s geology, ecosystems, and 
+                     climate, making it a valuable experience for all ages.
+                </p>
+                <hr>
+                    
+                <div class="touch">
+                    <a href="#" class="see-all ">See all</a>
+                    <button class="ticket-book tb-box">ticket book</button>
+                </div>
+            </div>
+            <!-- food -->
+            <div class="item-box" onclick="showDetails('food-details')">
+                <img class="content-img" src="food.jpg" alt="img">
+                <h2 class="name">Food</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+                     itaque illum porro ad eos quia fuga tenetur quidem atque rerum alias in eveniet nisi 
+                     inventore vero modi sit quam sint! Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Tempora earum recusandae rem at. 
+                </p>
+                <hr>
+                <div class="touch">
+                    <a href="#" class="see-all ">See all</a>
+                    <button class="ticket-book tb-box">ticket book</button>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section id="comments-me">
+        <div id="cm">
+            <textarea name="textarea" id="text-me" placeholder="pleace share your experience of visiting"></textarea>
+            <br>
+            <button id="sye">submit</button>
+        </div>
+      
+    </section>
+    <footer>
+        <div class="contact">
+            <p>Email : <a href="#">astro.world@astro.com</a></p>
+            <p>phone : +919708798088</p>
+            <p>&copy; 2024 Astro. All right reseved.</p>
+        </div>
+    </footer>
+    <script src="yume.js">
+       
+    </script>
+</body>
+</html>
