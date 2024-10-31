@@ -1,0 +1,36 @@
+header ul li{
+  margin: 3px 10px;
+}
+.welcome-h{
+  font-size: 1.5rem;
+}
+.address{
+  font-size: 1.3rem;
+}
+.item-box{
+  height: 520px;
+}
+ .mf{
+   width: 100px;
+ }
+ 
+.mcf{
+  background-color: white;
+  margin: 15% 3% !important;
+  width: auto;
+ }
+.display{
+  margin: 15% 3% !important;
+}
+.conform-btn{
+  height: 40px;
+  margin: 5px;
+  font-size: 1.1rem;
+} 
+#text-me{
+  width: 250px;
+  margin-top: 5px;
+}
+#resultfun{
+  margin: 15% 3%!important;
+}
